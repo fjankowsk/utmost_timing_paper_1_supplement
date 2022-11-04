@@ -1,0 +1,203 @@
+J/MNRAS/484/3691    The UTMOST pulsar timing programme I      (Jankowski+, 2019)
+================================================================================
+The UTMOST pulsar timing programme I: Overview and first results
+    Jankowski F., Bailes M., van Straten W., Keane E.F., Flynn C., Barr E.D.,
+    Bateman T., Bhandari S., Caleb M., Campbell-Wilson D., Farah W.,
+    Green A.J., Hunstead R.W., Jameson A., Oslowski S., Parthasarathy A.,
+    Rosado P.A., Venkatraman Krishnan V.
+    <Mon. Not. R. Astron. Soc. 484, 3691-3712 (2019)>
+    =2019MNRAS.484.3691J(SIMBAD/NED BibCode)
+
+================================================================================
+ADC_Keywords: Astrometric data ; Ephemerides ; Interferometry ; Models ;
+              Positional data ; Proper motions ; Pulsars ; Radio continuum ;
+              Radio sources
+Keywords: radiation mechanisms: non-thermal ; instrumentation: interferometers ;
+          methods: data analysis ; astrometry ; ephemerides ; pulsars: general
+
+Abstract:
+    We present an overview and the first results from a large-scale pulsar
+    timing programme that is part of the UTMOST project at the refurbished
+    Molonglo Observatory Synthesis Radio Telescope (MOST) near Canberra,
+    Australia. We currently observe more than 400 mainly bright southern radio
+    pulsars with up to daily cadences. For 205 (8 in binaries, 4 millisecond
+    pulsars), we publish updated timing models, together with their flux
+    densities, flux density variability, and pulse widths at 843 MHz, derived
+    from observations spanning between 1.4 and 3 yr. In comparison with the
+    ATNF pulsar catalogue, we improve the precision of the rotational and
+    astrometric parameters for 123 pulsars, for 47 by at least an order of
+    magnitude. The time spans between our measurements and those in the
+    literature are up to 48 yr, which allow us to investigate their long-term
+    spin-down history and to estimate proper motions for 60 pulsars, of which
+    24 are newly determined and most are major improvements. The results are
+    consistent with interferometric measurements from the literature. A model
+    with two Gaussian components centred at 139 and 463 km/s fits the
+    transverse velocity distribution best. The pulse duty cycle distributions
+    at 50 and 10 per cent maximum are best described by lognormal distributions
+    with medians of 2.3 and 4.4 per cent, respectively. We discuss two pulsars
+    that exhibit spin-down rate changes and drifting subpulses. Finally, we
+    describe the autonomous observing system and the dynamic scheduler that has
+    increased the observing efficiency by a factor of 2-3 in comparison with
+    static scheduling. 
+
+Data description:
+    We present updated astrometric ephemerides and rotational parameters for
+    205 radio pulsars, of which 8 are in binary systems, and 197 are isolated.
+    For 60 of them, we publish inferred proper motions and transverse
+    velocities, and for all of them, we report band-integrated flux densities,
+    modulation indices and pulse widths at 50 and 10 per cent maximum at a
+    frequency of 843 MHz. Our measurements are based on up to daily
+    observations with time spans of 1.4 to 3 yr performed at the refurbished
+    Molonglo Observatory Synthesis Radio Telescope (MOST), a radio
+    interferometer located in Australia. In table 3, we list the pulsar names
+    (J2000), the proper motions in right ascension and declination, proper
+    motion measurements from the literature where available, the maximum time
+    spans between position measurements, the number of positions in the fit,
+    the references for the literature proper motions, the pulsar distances and
+    their transverse velocities. In table3_r, we list the references used in
+    table 3, their names in the publication and their bibcodes. In table B1, we
+    report the pulsar names (J2000), their positions referenced to the ICRF,
+    their spin frequencies and first temporal derivatives, the root mean square
+    timing residuals in us and as a fractions of the pulsar periods, the number
+    of pulse arrival times, the reduced chi2 and degrees of freedom of the fits,
+    the timing baselines and a flag whether we corrected the pulse arrival
+    times for underestimation. Table B1 shows the results for 8 pulsars in
+    binary systems. Table B2 reports the results for 197 isolated pulsars, in
+    a format analogue to the one of table B1. In table C1, we present the pulsar
+    names (J2000), whether they have interpulses, their band-integrated flux
+    densities at 843 MHz, their robust modulation indices and their pulse
+    widths at 50 and 10 per cent maximum. The period, position and dispersion
+    measure determination epoch is set to MJD 57600 for all pulsars. We report
+    all uncertainties at the 1 sigma level.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName       Lrecl  Records  Explanations
+--------------------------------------------------------------------------------
+ReadMe           80        .  This file
+table3.dat       91       60  Proper motions and velocities for 60 pulsars
+table3_r.dat     57       15  Literature references used in table 3
+tableB1.dat     108        8  Rotational parameters for 8 binary systems
+tableB2.dat     125      197  Rotational parameters for 197 isolated pulsars
+tableC1.dat      43      205  Flux densities and pulse widths for 205 pulsars
+
+Byte-by-byte Description of file: table3.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label         Explanations
+--------------------------------------------------------------------------------
+   1-  2   I2    ---    Seq           Running number
+   4- 13   A10   ---    PSRJ          Pulsar name (J2000)
+  15- 15   A1    ---    footnote1   ? Footnote
+  17- 22   F6.2  mas/yr pmRA          Proper motion in right ascension
+  24- 25   I2    mas/yr e_pmRA        Uncertainty of proper motion in RA
+  27- 32   F6.2  mas/yr pmDE          Proper motion in declination
+  34- 35   I2    mas/yr e_pmDE        Uncertainty of proper motion in Dec
+  37- 43   F7.3  mas/yr lit_pmRA    ? Literature value for proper motion in RA
+  45- 46   I2    mas/yr lit_e_pmRA  ? Uncertainty of lit value of pm in RA
+  48- 48   A1    ---    footnote2   ? Footnote
+  50- 56   F7.3  mas/yr lit_pmDE    ? Literature value of proper motion in Dec
+  58- 60   I3    mas/yr lit_e_pmDE  ? Uncertainty of lit value of pm in Dec
+  62- 62   A1    ---    footnote3   ? Footnote
+  64- 67   F4.1  yr     dt            Maximum time span between pos measurements
+  69- 69   I1    ---    npos          Number of positions in pm estimate
+  71- 72   I2    ---    r_lit_pmRA  ? Reference for literature proper motions
+  74- 79   F6.4  kpc    dist          Distance
+  81- 81   I1    ---    e_dist      ? Uncertainty of distance
+  83- 87   F5.1  km/s   vtrans        Transverse velocity
+  89- 91   I3    km/s   e_vtrans      Uncertainty of transverse velocity
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Byte-by-byte Description of file: table3_r.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2   I2   --- Seq           Reference number
+   4- 37   A34  --- Name          Name of literature reference
+  39- 57   A19  --- BibCode       BibCode for literature reference
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Byte-by-byte Description of file: tableB1.dat
+--------------------------------------------------------------------------------
+   Bytes Format   Units   Label   Explanations
+--------------------------------------------------------------------------------
+   1-  1   I1     ---    Seq      Running number
+   3- 13   A11    ---    PSRJ     Pulsar name (J2000)
+  15- 16   I2     h      RAh      Right ascension referenced to the ICRF (hours)
+  18- 19   I2     min    RAm      Right ascension (minutes)
+  21- 28   F8.5   s      RAs      Right ascension (seconds)
+  30- 30   I1     s      e_RAs    Uncertainty of right ascension
+  32- 32   A1     ---    DE-      Sign of declination
+  33- 34   I2     deg    DEd      Declination referenced to the ICRF (degrees)
+  36- 37   I2     arcmin DEm      Declination (minutes)
+  39- 45   F7.4   arcsec DEs      Declination (seconds)
+  47- 47   I1     arcsec e_DEs    Uncertainty of declination
+  49- 64   F16.12 Hz     F0       Pulsar spin frequency
+  66- 66   I1     Hz     e_F0     Uncertainty of spin frequency
+  68- 77   F10.4  1/s2   F1       First temporal derivative of spin frequency (1)
+  79- 79   I1     1/s2   e_F1     Uncertainty of first spin frequency derivative
+  81- 85   F5.1   us     RMS      Root mean square timing residual
+  87- 89   F3.1   ---    RMS_P0   RMS timing residual divided by spin period
+  91- 93   I3     ---    ntoa     Number of pulse arrival times in fit
+  95- 97   F3.1   ---    chi2r    Reduced chi2 of the timing fit
+  99-101   I3     ---    dof      Degrees of freedom of the timing fit
+ 103-105   F3.1   yr     dt       Time span of pulse arrival times in fit
+ 107-107   A1     ---    flags  ? Pulse arrival time correction flag
+--------------------------------------------------------------------------------
+Note (1): Divided by 10^-15.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Byte-by-byte Description of file: tableB2.dat
+--------------------------------------------------------------------------------
+   Bytes Format  Units   Label      Explanations
+--------------------------------------------------------------------------------
+   1-  3   I3     ---    Seq        Running number
+   5- 14   A10    ---    PSRJ       Pulsar name (J2000)
+  16- 17   I2     h      RAh        Right ascension referenced to ICRF (hours)
+  19- 20   I2     min    RAm        Right ascension (minutes)
+  22- 28   F7.4   s      RAs        Right ascension (seconds)
+  30- 31   I2     s      e_RAs      Uncertainty of right ascension
+  33- 33   A1     ---    DE-        Sign of declination
+  34- 35   I2     deg    DEd        Declination referenced to the ICRF (degrees)
+  37- 38   I2     arcmin DEm        Declination (minutes)
+  40- 45   F6.3   arcsec DEs        Declination (seconds)
+  47- 47   I1     arcsec e_DEs      Uncertainty of declination
+  49- 64   F16.12 Hz     F0         Pulsar spin frequency
+  66- 66   I1     Hz     e_F0       Uncertainty of spin frequency
+  68- 78   F11.5  1/s2   F1         First temp derivative of spin frequency (1)
+  80- 80   I1     1/s2   e_F1       Uncertainty of first spin freq derivative
+  82- 89   F8.5   1/s3   F2      ?  Second temp derivative of spin frequency (2)
+  91- 92   I2     1/s3   e_F2    ?  Uncertainty of second spin freq derivative
+  94- 99   F6.1   us     RMS        Root mean square timing residual
+ 101-104   F4.1   ---    RMS_P0     RMS timing residual divided by spin period
+ 106-108   I3     ---    ntoa       Number of pulse arrival times in fit
+ 110-113   F4.1   ---    chi2r      Reduced chi2 of the timing fit
+ 115-115   A1     ---    l_chi2r ?  Limit flag on reduced chi2
+ 117-119   I3     ---    dof        Degrees of freedom of the timing fit
+ 121-123   F3.1   yr     dt         Time span of pulse arrival times in fit
+ 125-125   I1     ---    flags   ?  Pulse arrival time correction flag
+--------------------------------------------------------------------------------
+Note (1): Divided by 10^-15.
+Note (2): Divided by 10^-24.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Byte-by-byte Description of file: tableC1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label      Explanations
+--------------------------------------------------------------------------------
+   1-  3   I3    --- Seq           Running number
+   5- 15   A11   --- PSRJ          Pulsar name (J2000)
+  17- 17   I1    --- interpulse  ? Label of whether pulsar has an interpulse
+  19- 22   F4.1  mJy S843          Flux density at 843 MHz
+  24- 26   F3.1  mJy e_S843        Uncertainty of flux density at 843 MHz
+  28- 31   F4.2  --- mr            Robust modulation index at 843 MHz
+  33- 37   F5.1  deg W50         ? Full pulse width at 50 per cent maximum
+  39- 43   F5.1  deg W10           Full pulse width at 10 per cent maximum
+--------------------------------------------------------------------------------
+
+Acknowledgements: Fabian Jankowski <fjankowsk at gmail.com>
+================================================================================
+(End)       Fabian Jankowski [University of Manchester, UK]           2020-02-03
